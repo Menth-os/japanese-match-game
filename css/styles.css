@@ -500,3 +500,26 @@ body {
     font-size: 0.85rem;
   }
 }
+
+.lang-select {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--muted);
+}
+
+.timer {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#end-screen p {
+  font-size: 1.1rem;
+  margin: 6px 0;
+}

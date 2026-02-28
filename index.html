@@ -8,56 +8,81 @@
 </head>
 <body>
   <div class="app">
+
     <header class="app-header">
       <h1>Japanese Match Game</h1>
-      <p class="subtitle">Match images with Japanese words in kana (and kanji).</p>
+      <div class="lang-select">
+        <label for="lang">Language:</label>
+        <select id="lang">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+        </select>
+      </div>
     </header>
 
     <main class="app-main">
-      <!-- Start Screen -->
+
+      <!-- START SCREEN -->
       <section id="start-screen" class="card active">
-        <h2>Ready to play?</h2>
-        <p>Choose a game mode and test your Japanese vocabulary.</p>
+        <h2 data-i18n="start_title">Ready to play?</h2>
+        <p data-i18n="start_sub">Test your Japanese vocabulary.</p>
 
-        <div class="mode-select">
-          <button class="mode-btn" data-mode="single-choice">
-            1 Image · 4 Answers
-          </button>
-          <button class="mode-btn" data-mode="drag-drop">
-            4 Images · Drag &amp; Drop
-          </button>
-        </div>
+        <button id="start-normal" class="primary-btn" data-i18n="start_normal">
+          Start
+        </button>
 
-        <button id="start-btn" class="primary-btn" disabled>
-          Start Game
+        <button id="start-hard" class="secondary-btn" data-i18n="start_hard">
+          Start Hard Mode (2 min)
         </button>
       </section>
 
-      <!-- Game Screen -->
+      <!-- GAME SCREEN -->
       <section id="game-screen" class="card">
         <div class="game-header">
-          <button id="back-btn" class="ghost-btn">&larr; Back</button>
+          <button id="back-btn" class="ghost-btn" data-i18n="back_btn">← Back</button>
+
           <div class="progress">
-            Question <span id="question-number">1</span>/ <span id="question-total">10</span>
+            <span data-i18n="question">Question</span>
+            <span id="question-number">1</span> /
+            <span id="question-total">10</span>
           </div>
+
+          <div id="timer" class="timer hidden">02:00</div>
         </div>
 
-        <div id="game-area">
-          <!-- Filled dynamically -->
-        </div>
+        <div id="game-area"></div>
 
         <div class="controls">
-          <button id="check-btn" class="primary-btn" disabled>Check</button>
-          <button id="next-btn" class="secondary-btn" disabled>Next</button>
+          <button id="check-btn" class="primary-btn" disabled data-i18n="check">
+            Check
+          </button>
+          <button id="next-btn" class="secondary-btn" disabled data-i18n="next">
+            Next
+          </button>
         </div>
 
         <div id="feedback" class="feedback"></div>
       </section>
+
+      <!-- END SCREEN -->
+      <section id="end-screen" class="card">
+        <h2 data-i18n="end_title">Finished!</h2>
+        <p>
+          <span data-i18n="correct">Correct:</span>
+          <span id="correct-count">0</span>
+        </p>
+        <p>
+          <span data-i18n="wrong">Wrong:</span>
+          <span id="wrong-count">0</span>
+        </p>
+
+        <button id="restart-btn" class="primary-btn" data-i18n="restart">
+          Restart
+        </button>
+      </section>
+
     </main>
 
-    <footer class="app-footer">
-      <span>Made for learning Japanese · Demo data only</span>
-    </footer>
   </div>
 
   <script src="js/main.js"></script>
