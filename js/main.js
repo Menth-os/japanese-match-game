@@ -514,8 +514,10 @@ function evaluateDragDrop() {
 
     if (assigned === imageId) {
       l.classList.add("correct");
+      l.classList.remove("incorrect");
     } else {
       l.classList.add("incorrect");
+      l.classList.remove("correct");
       allCorrect = false;
     }
   });
@@ -525,6 +527,7 @@ function evaluateDragDrop() {
 
   showFeedback(allCorrect);
 }
+
 
 // -------------------------
 // CHECK & NEXT
