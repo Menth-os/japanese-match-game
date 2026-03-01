@@ -18,7 +18,7 @@ let timeLeft = 120;
 
 let tapSelectedAnswer = null; // NEW: tap-to-select answer
 
-const QUESTION_COUNT = 10;
+const QUESTION_COUNT = 20;
 
 // -------------------------
 // ELEMENTS
@@ -605,3 +605,4 @@ function finishGame() {
 restartBtn.addEventListener("click", () => {
   switchScreen("start");
 });
+
