@@ -14,7 +14,6 @@
   { "id": "inu", "kana": "いぬ", "kanji": "犬", "english": "dog", "image": "assets/images/inu.png" },
   { "id": "ischa", "kana": "いしゃ", "kanji": "医者", "english": "doctor", "image": "assets/images/ischa.png" },
   { "id": "isu", "kana": "いす", "kanji": "", "english": "chair", "image": "assets/images/isu.png" },
-  { "id": "jumi", "kana": "しゅみ", "kanji": "趣味", "english": "hobby", "image": "assets/images/jumi.png" },
   { "id": "jouba", "kana": "じょうば", "kanji": "乗馬", "english": "horse riding", "image": "assets/images/jouba.png" },
   { "id": "kaischa", "kana": "かいしゃ", "kanji": "会社", "english": "company", "image": "assets/images/kaischa.png" },
   { "id": "kankoku", "kana": "かんこく", "kanji": "韓国", "english": "South Korea", "image": "assets/images/kankoku.png" },
@@ -37,6 +36,7 @@
   { "id": "ryouri", "kana": "りょうり", "kanji": "料理", "english": "cooking / cuisine", "image": "assets/images/ryouri.png" },
   { "id": "sakana", "kana": "さかな", "kanji": "魚", "english": "fish", "image": "assets/images/sakana.png" },
   { "id": "schouyu", "kana": "しょうゆ", "kanji": "醤油", "english": "soy sauce", "image": "assets/images/schouyu.png" },
+  { "id": "schumi", "kana": "しゅみ", "kanji": "趣味", "english": "hobby", "image": "assets/images/schumi.png" },
   { "id": "seito", "kana": "せいと", "kanji": "生徒", "english": "student (school)", "image": "assets/images/seito.png" },
   { "id": "sensei", "kana": "せんせい", "kanji": "先生", "english": "teacher", "image": "assets/images/sensei.png" },
   { "id": "soba", "kana": "そば", "kanji": "", "english": "buckwheat noodles", "image": "assets/images/soba.png" },
@@ -53,3 +53,4 @@
   { "id": "yasai", "kana": "やさい", "kanji": "野菜", "english": "vegetable", "image": "assets/images/yasai.png" },
   { "id": "yoru", "kana": "よる", "kanji": "夜", "english": "night", "image": "assets/images/yoru.png" }
 ]
+
